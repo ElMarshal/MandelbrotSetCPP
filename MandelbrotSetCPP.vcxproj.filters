@@ -21,9 +21,24 @@
     <ClCompile Include="src\stb_image_write.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\complex_number.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stb_image_write.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\real_number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\complex_number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

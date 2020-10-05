@@ -1,3 +1,3 @@
 #pragma once
 
-typedef float Real;
+typedef double Real;

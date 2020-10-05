@@ -152,11 +152,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\complex_number.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\stb_image_write.c" />
+    <ClCompile Include="src\vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\complex_number.h" />
+    <ClInclude Include="src\real_number.h" />
     <ClInclude Include="src\stb_image_write.h" />
+    <ClInclude Include="src\vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
