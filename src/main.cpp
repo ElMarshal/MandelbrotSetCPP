@@ -47,13 +47,13 @@ void print_progress(int progress)
 	}
 	progress_bar[50] = '\0';
 
-	printf("[%s] %d%% \r", progress_bar, progress);
+	printf("\r[%s] %d%%   ", progress_bar, progress);
 }
 
 int main()
 {
-	const size_t BUFFER_WIDTH = 1920;
-	const size_t BUFFER_HEIGHT = 1080;
+	const size_t BUFFER_WIDTH = 1366; //1920;
+	const size_t BUFFER_HEIGHT = 768; // 1080;
 	const Real ASPECT_RATIO = (Real)BUFFER_WIDTH / (Real)BUFFER_HEIGHT;
 	const size_t SAMPLE_COUNT = 16;
 	const char* OUTPUT_FILE_NAME = "output/image.png";
@@ -76,6 +76,7 @@ int main()
 	Rnd rnd;
 
 	// render to the buffer
+	printf("Rendering:\n");
 	for (size_t y = 0; y < BUFFER_HEIGHT; ++y)
 	{
 		for (size_t x = 0; x < BUFFER_WIDTH; ++x)
@@ -120,7 +121,10 @@ int main()
 		return EXIT_FAILURE;
 
 	}
-	printf("Saved the buffer to %s\n", OUTPUT_FILE_NAME);
+	printf("Saved the image to \"%s\" file\n", OUTPUT_FILE_NAME);
+
+	// cleanup
+	delete[] color_buffer;
 
 	return EXIT_SUCCESS;
 }
