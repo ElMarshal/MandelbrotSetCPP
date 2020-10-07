@@ -85,9 +85,9 @@ int main()
 			for (size_t i = 0; i < SAMPLE_COUNT; ++i)
 			{
 				const Vector2 normalized_pos = { 
-					(((Real)x+rnd.next_norm()-0.5) / (Real)BUFFER_WIDTH * 2.0 - 1),  // x: [-1, 1]
-					-(((Real)y+rnd.next_norm()-0.5) / (Real)BUFFER_HEIGHT * 2.0 - 1.0) }; // y: [-1, 1]
-				const Vector2 pos = { CENTER_POS.x + normalized_pos.x*VIEW_SIZE.x/2.0, CENTER_POS.y + normalized_pos.y*VIEW_SIZE.y/2.0 };
+					(((Real)x+rnd.next_norm()-0.5f) / (Real)BUFFER_WIDTH * 2.0f - 1.0f),  // x: [-1, 1]
+					-(((Real)y+rnd.next_norm()-0.5f) / (Real)BUFFER_HEIGHT * 2.0f - 1.0f) }; // y: [-1, 1]
+				const Vector2 pos = { CENTER_POS.x + normalized_pos.x*VIEW_SIZE.x/2.0f, CENTER_POS.y + normalized_pos.y*VIEW_SIZE.y/2.0f };
 
 				Complex z = { 0.0, 0.0 };
 				size_t iterations = 0;

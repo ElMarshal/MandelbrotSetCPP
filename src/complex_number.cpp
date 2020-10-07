@@ -23,7 +23,7 @@ Complex Complex::operator*(const Complex& rhs) const
 
 Complex Complex::square() const
 {
-	return Complex{ (r*r - i*i), (2.0*i*r) };
+	return Complex{ (r*r - i*i), (2.0f*i*r) };
 }
 
 Real Complex::length() const
